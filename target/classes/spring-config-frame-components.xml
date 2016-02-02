@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-lazy-init="true">
+
+    <bean id="labelNumber1" class="javax.swing.JLabel" />
+    <bean id="labelNumber2" class="javax.swing.JLabel" />
+    <bean id="labelResult" class="javax.swing.JLabel" />
+
+    <bean id="field1" class="javax.swing.JTextField" />
+    <bean id="field2" class="javax.swing.JTextField" />
+    <bean id="fieldResult" class="javax.swing.JTextField" />
+
+    <bean id="buttonPlus" class="javax.swing.JButton" />
+    <bean id="buttonMinus" class="javax.swing.JButton" />
+    <bean id="buttonMultiply" class="javax.swing.JButton" />
+    <bean id="buttonDivide" class="javax.swing.JButton" />
+    <bean id="buttonClean" class="javax.swing.JButton" />
+
+    <bean id="gridLayout1" class="java.awt.GridLayout" >
+    <constructor-arg value="6" type="int"/>
+    <constructor-arg value="0" type="int"/>
+    </bean>
+
+    <bean id="gridLayout2" class="java.awt.GridLayout" >
+        <constructor-arg value="5" type="int"/>
+        <constructor-arg value="0" type="int"/>
+    </bean>
+
+    <bean id="gridLayout3" class="java.awt.GridLayout" >
+        <constructor-arg value="0" type="int"/>
+        <constructor-arg value="2" type="int"/>
+    </bean>
+
+    <bean id="p1" class="javax.swing.JPanel" />
+    <bean id="p2" class="javax.swing.JPanel" />
+
+    <bean id="myFrameGUI"
+          class="ru.stepanian.calc.MyFrameGUI" >
+        <constructor-arg value="Calculator" type="java.lang.String"/>
+        <constructor-arg value="300" type="int"/>
+        <constructor-arg value="200" type="int"/>
+    </bean>
+
+
+</beans>
