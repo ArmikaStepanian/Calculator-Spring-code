@@ -36,7 +36,7 @@ public class CalculatorListener implements ActionListener {
         double value2 = Double.parseDouble(textFromField2);   //Записать это значение (которое типа String) в виде типа double
 
         if (clickedButton.getActionCommand().equals("+")) {
-            fieldResult.setText("" + Operations.add(value1, value2)); //всю математику выносим в отдельный класс, клевая идея
+            fieldResult.setText("" + Operations.add(value1, value2)); //всю математику выносим в отдельный класс
         }
         if (clickedButton.getActionCommand().equals("-")) {
             fieldResult.setText("" + Operations.minus(value1, value2)); //как известно, пустоту прибавляем для конвертации в строку
